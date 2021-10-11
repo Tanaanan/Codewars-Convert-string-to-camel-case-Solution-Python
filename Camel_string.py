@@ -1,10 +1,10 @@
-text = "The_Stealth_Warrior" #testcase
+text = "the_pippi_pas_pippi" #testcase
 
 def to_camel_case(text):
     if "-" in text:
         Camel_text = text.split("-") 
     elif "_" in text:
-        Camel_text = text.split("_")
+        Camel_text = text.split("_") 
     else:
         return text
 
@@ -22,10 +22,7 @@ def to_camel_case(text):
     result = ("").join(List_result) 
     result = Basedtext+result
     
-    return result
+    return to_camel_case(result) #double check when method have "-" and "_"
+    
 
 to_camel_case(text)
-
-
-
-
